@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar Modern</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      nav {
+        background-color: #222;
+        padding: 12px 24px;
+        display: flex;
+        justify-content: center;
+        gap: 30px; /* Jarak antar link */
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+        position: relative; /* Untuk efek garis */
+        padding: 5px 0;
+      }
+
+      /* Efek garis animasi saat hover */
+      nav a::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 2px;
+        width: 0%;
+        background-color: #ffcc00;
+        transition: width 0.3s ease;
+      }
+
+      nav a:hover::after {
+        width: 100%;
+      }
+
+      nav a:hover {
+        color: #ffcc00;
+      }
+
+      /* Responsif untuk mobile */
+      @media (max-width: 600px) {
+        nav {
+          flex-direction: column;
+          align-items: center;
+          gap: 15px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="semantik.html">Posts</a>
+      <a href="login.html">Login</a>
+    </nav>
+
+    <img src="perkembangan web.jpeg" alt="" />
+  </body>
+</html>

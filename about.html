@@ -3,11 +3,118 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Profil Zidane</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: "Poppins", sans-serif;
+        background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+      }
+
+      .card {
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(15px);
+        border-radius: 20px;
+        padding: 2rem;
+        width: 370px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        transition: all 0.3s ease;
+        animation: fadeIn 1s ease;
+        text-align: center;
+      }
+
+      .card:hover {
+        transform: scale(1.03);
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .profile-img {
+        width: 120px;
+        height: 120px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 4px solid #ffe600;
+        box-shadow: 0 0 15px #ffe600;
+        margin-bottom: 1rem;
+      }
+
+      h1 {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+        color: #ffe600;
+      }
+
+      .info {
+        margin: 0.8rem 0;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        font-size: 1.1rem;
+        padding: 0.6rem;
+        border-radius: 12px;
+        justify-content: center;
+        background: rgba(255, 255, 255, 0.1);
+        box-shadow: inset 2px 2px 5px rgba(255, 255, 255, 0.05),
+          inset -2px -2px 5px rgba(0, 0, 0, 0.2);
+      }
+
+      .info i {
+        color: #ffe600;
+        font-size: 1.3rem;
+      }
+
+      .footer {
+        text-align: center;
+        margin-top: 1.5rem;
+        font-size: 0.85rem;
+        opacity: 0.7;
+      }
+    </style>
   </head>
   <body>
-    <p>Nama : Muhammad Zidane Alfadhil Ghani</p>
-    <p>TTL : palembang, 15 Maret 2009</p>
-    <p>Hobi : Futsal</p>
+    <div class="card">
+      <!-- Ganti src dengan URL foto kamu -->
+      <img class="profile-img" src="i" alt="Foto Zidane" />
+
+      <h1>👤 Profil Zidane</h1>
+      <div class="info">
+        <i class="fas fa-user"></i> Muhammad Zidane Alfadhil Ghani
+      </div>
+      <div class="info">
+        <i class="fas fa-calendar-alt"></i> Palembang, 15 Maret 2009
+      </div>
+      <div class="info"><i class="fas fa-futbol"></i> Futsal</div>
+      <div class="footer">© 2025 by Zidane. All rights reserved.</div>
+    </div>
+    </form>
   </body>
 </html>
