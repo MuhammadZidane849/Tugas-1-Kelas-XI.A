@@ -1,0 +1,289 @@
+/* === GLOBAL STYLE === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+  line-height: 1.8;
+  padding-bottom: 40px;
+}
+
+/* === HEADER === */
+header {
+  background: #ffffff;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+  color: #4a47a3;
+  font-weight: 600;
+}
+
+header .user {
+  font-weight: 600;
+  color: #444;
+}
+
+/* === NAVBAR === */
+nav {
+  background-color: #4a47a3;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 15px 20px;
+  display: inline-block;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  background-color: #2e2b82;
+}
+
+/* === MAIN === */
+main {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.judul {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #333;
+  font-size: 1.9rem;
+}
+
+.info-penulis {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* === GAMBAR === */
+.gambar {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.gambar img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* === PARAGRAF & HEADING === */
+h2 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: #4a47a3;
+  font-size: 1.4rem;
+}
+
+p {
+  margin-bottom: 20px;
+  font-size: 1rem;
+  color: #444;
+  text-align: justify;
+}
+
+/* === LINK LAIN === */
+.link-lain {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.link-lain a {
+  color: #4a47a3;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.link-lain a:hover {
+  text-decoration: underline;
+}
+
+/* === MUSIK === */
+.musik {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* === FOOTER === */
+footer {
+  background: #7e7afa; /* ungu */
+  color: #eeeeee; /* tulisan putih */
+  text-align: center; /* teks di tengah horizontal */
+  padding: 15px;
+  display: flex; /* supaya teks juga bisa center vertikal */
+  justify-content: center;
+  align-items: center;
+  height: 50px; /* tinggi footer */
+}
+
+/* ukuran layar tablet */
+@media screen and (max-width: 768px) {
+  main article {
+    flex-basis: 100%;
+  }
+
+  img {
+    max-width: 90%;
+    height: auto;
+  }
+
+  main aside {
+    flex-basis: 100%;
+  }
+
+  main aside .tag,
+  main aside .news {
+    flex-basis: 45%;
+  }
+
+  .form-control {
+    width: 100%;
+  }
+
+  .form-desc {
+    width: 100%;
+  }
+}
+
+/* Ukuran Layar hp Besar */
+@media screen and (max-width: 425px) {
+  main article {
+    flex-basis: 100%;
+  }
+
+  img {
+    max-width: 90%;
+    height: auto;
+  }
+
+  header .left .logo {
+    font-size: 20px;
+  }
+
+  header .right .user {
+    font-size: 14px;
+  }
+
+  nav {
+    height: auto;
+    text-align: center;
+  }
+
+  nav ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav li {
+    display: block;
+    margin: 5px 0;
+  }
+
+  nav ul li:hover {
+    background-color: initial;
+  }
+
+  nav ul li a {
+    height: auto;
+    line-height: 30px;
+    padding: 0;
+  }
+
+  main article {
+    margin: 10px 20px;
+    max-width: 90%;
+  }
+}
+
+img {
+  max-width: 90%;
+  height: auto;
+}
+
+main aside .tag,
+main aside .news {
+  margin: 10px 20px;
+  flex-basis: 100%;
+}
+
+.form-control {
+  width: 100%;
+}
+
+.form-desc {
+  width: 100%;
+}
+
+.btn {
+  width: 100%;
+}
+
+/* Ukuran Layar hp Kecil */
+@media screen and (max-width: 375px) {
+  main article {
+    margin: 10px 20px;
+    max-width: 100%;
+  }
+
+  header .left .logo {
+    font-size: 18px;
+  }
+
+  header .right .user {
+    font-size: 12px;
+  }
+
+  main aside .tag,
+  main aside .news,
+  main article {
+    margin: 10px 0;
+  }
+
+  h1 {
+    font-size: 18px;
+  }
+
+  img {
+    min-width: 90%;
+    height: auto;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  .btn {
+    height: 35px;
+  }
+}

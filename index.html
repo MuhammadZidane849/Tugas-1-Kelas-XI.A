@@ -4,206 +4,108 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Perkembangan Website</title>
-    <style>
-      body {
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-        background: linear-gradient(to right, #f0f2f5, #e0e7ff);
-        margin: 0;
-        padding: 20px;
-        color: #333;
-      }
-
-      h1 {
-        text-align: center;
-        color: #2c3e50;
-        font-size: 32px;
-        margin-bottom: 10px;
-      }
-
-      small {
-        display: block;
-        text-align: center;
-        margin-bottom: 30px;
-        color: #888;
-        font-size: 14px;
-      }
-
-      p {
-        font-size: 16px;
-        line-height: 1.6;
-        margin: 10px 0;
-      }
-
-      section {
-        background-color: #ffffff;
-        border-radius: 12px;
-        padding: 20px;
-        margin-bottom: 25px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-        transition: transform 0.3s ease;
-      }
-
-      section:hover {
-        transform: translateY(-4px);
-      }
-
-      .section-title {
-        font-weight: bold;
-        font-size: 18px;
-        margin-top: 10px;
-        color: #1e3a8a;
-      }
-
-      .subtitle {
-        font-weight: bold;
-        color: #555;
-      }
-
-      .center-img {
-        display: flex;
-        justify-content: center;
-        margin: 30px 0;
-      }
-
-      .center-img img {
-        width: 100%;
-        max-width: 500px;
-        height: auto;
-        border-radius: 12px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-      }
-
-      a {
-        color: #2563eb;
-        text-decoration: none;
-        font-weight: bold;
-      }
-
-      a:hover {
-        text-decoration: underline;
-      }
-
-      audio {
-        display: block;
-        margin: 40px auto;
-      }
-
-      .author-info {
-        text-align: center;
-        margin-bottom: 10px;
-        color: #444;
-        font-size: 15px;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <h1>Perkembangan Website Dari Web 1.0 Sampai 4.0 Menggunakan HTML</h1>
-    <div class="author-info"><b>Zidane</b> - <i>Perkembangan Website</i></div>
-    <small>Senin, 30-7-2025</small>
+    <!-- HEADER -->
+    <header>
+      <div class="left">
+        <h2 class="logo">Perkembangan Website</h2>
+      </div>
+      <div class="right">
+        <p class="user">👤 Zidane</p>
+      </div>
+    </header>
 
-    <div class="center-img">
-      <img src="perkembangan web.jpeg" alt="Gambar Perkembangan Web" />
-    </div>
+    <!-- NAVBAR -->
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="posts.html">Posts</a></li>
+        <li><a href="login.html">Log in</a></li>
+      </ul>
+    </nav>
 
-    <section>
-      <p class="section-title">🌐 Web 1.0 – "Web Statis" (1990 – awal 2000)</p>
-      <p class="subtitle">🧾 Penjelasan:</p>
+    <!-- KONTEN -->
+    <main>
+      <h1 class="judul">
+        Perkembangan Website Dari Web 1.0 Sampai 4.0 Menggunakan HTML
+      </h1>
+
+      <div class="info-penulis">
+        <p><b>Zidane</b> - <i>Perkembangan Website</i></p>
+        <small>Senin, 30-7-2025</small>
+      </div>
+
+      <div class="gambar">
+        <img src="perkembangan web.jpeg" alt="Gambar" />
+      </div>
+
+      <section class="konten">
+        <article>
+          <h2>🌐 Web 1.0 – "Web Statis" (1990 – awal 2000)</h2>
+          <p>
+            Web 1.0 adalah generasi pertama dari web. Situs web saat itu hanya
+            berisi informasi statis, tidak ada interaksi dari pengguna.
+          </p>
+        </article>
+
+        <article>
+          <h2>🌐 Web 2.0 – "Web Sosial & Interaktif" (2004 – sekarang)</h2>
+          <p>
+            Web 2.0 menghadirkan internet yang lebih interaktif & kolaboratif.
+            Lahir media sosial, forum, blog, dan e-commerce.
+          </p>
+        </article>
+
+        <article>
+          <h2>
+            🌐 Web 3.0 – "Web Semantik & Terdesentralisasi" (2010 – berkembang)
+          </h2>
+          <p>
+            Web 3.0 membuat web lebih cerdas. Mesin dapat memahami makna data,
+            serta mendorong desentralisasi agar pengguna memiliki kendali atas
+            data mereka.
+          </p>
+        </article>
+
+        <article>
+          <h2>🌐 Web 4.0 – "Web Cerdas & Terhubung Sepenuhnya" (masa depan)</h2>
+          <p>
+            Visi web masa depan: semua perangkat terhubung otomatis, AI menjadi
+            asisten digital pribadi yang responsif.
+          </p>
+        </article>
+      </section>
+
+      <div class="link-lain">
+        <p>
+          🔗 Baca juga:
+          <a href="about.html" target="_blank">Tentang Gw</a>
+        </p>
+      </div>
+
+      <div class="musik">
+        <audio controls>
+          <source
+            src="All Too Well (10 Minute Version).mp3"
+            type="audio/mpeg"
+          />
+          Browser Anda tidak mendukung pemutar audio.
+        </audio>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
       <p>
-        Web 1.0 adalah generasi pertama dari web. Situs web saat itu hanya
-        berisi informasi statis, tidak ada interaksi dari pengguna. Pemilik
-        situs adalah satu-satunya pihak yang bisa membuat atau mengubah konten.
-        Pengguna hanya bisa membaca informasi tanpa bisa berpartisipasi.
+        &copy; 2025 Rabbaanii Islamic School. Hak cipta dilindungi undang-undang
       </p>
-    </section>
-
-    <section>
-      <p class="section-title">
-        🌐 Web 2.0 – "Web Sosial dan Interaktif" (2004 – sekarang)
-      </p>
-      <p class="subtitle">🧾 Penjelasan:</p>
-      <p>
-        Web 2.0 menghadirkan internet yang jauh lebih interaktif dan
-        kolaboratif. Pengguna sekarang bisa membuat konten, berkomentar,
-        berbagi, bahkan berjualan. Media sosial dan platform komunitas lahir di
-        era ini.
-      </p>
-    </section>
-
-    <section>
-      <p class="section-title">
-        🌐 Web 3.0 – "Web Semantik & Terdesentralisasi" (2010-an – kini)
-      </p>
-      <p class="subtitle">🧾 Penjelasan:</p>
-      <p>
-        Web 3.0 membuat web menjadi lebih cerdas. Mesin mulai bisa memahami
-        makna data dan menyajikan informasi yang relevan dan terpersonalisasi.
-        Selain itu, ada gerakan ke arah desentralisasi, di mana pengguna
-        memiliki kembali kendali atas data mereka.
-      </p>
-    </section>
-
-    <section>
-      <p class="section-title">
-        🌐 Web 4.0 – "Web Cerdas & Terhubung Sepenuhnya" (masa depan)
-      </p>
-      <p class="subtitle">🧾 Penjelasan:</p>
-      <p>
-        Web 4.0 adalah visi web masa depan di mana semua perangkat terhubung dan
-        berkomunikasi secara otomatis, termasuk antara manusia dan mesin. Web
-        ini berperan sebagai asisten digital yang cerdas, siap membantu dengan
-        cepat dan sesuai konteks.
-      </p>
-    </section>
-
-    <section>
-      <p class="section-title">
-        🔗 Baca Ini:
-        <a href="http://127.0.0.1:5500/about.html" target="_blank"
-          >Tentang Gw</a
-        >
-      </p>
-    </section>
-
-    <audio controls autoplay>
-      <source
-        src="All Too Well (10 Minute Version) (Taylor's Version) (From The Vault) (Lyric Video) [BZ-rLBkUZf4].mp3"
-        type="audio/mpeg"
-      />
-      Browser Anda tidak mendukung pemutar audio.
-    </audio>
-    <br>
-    <br>
-    <form action="">
-      <fieldset>
-        <legend>Komentar</legend>
-        <label for="name">Nama</label>
-        <br />
-        <input type="name" name="name" id="Nama" placeholder="Masukka Nama" required/>
-        <br />
-        <br />
-        <label for="email">Email</label>
-        <br />
-        <input type="email" name="email" id="Email" placeholder="Masukkan Email" required/>
-        <br>
-        <br>
-        <label for="komentar">Komentar</label>
-        <br>
-        <textarea name="Komentar" id="komentar" placeholder="Masukkan Komentar" cols="30" rows="10"></textarea>
-        <br>
-        <br>
-        <label for="rating">rating</label>
-      <br>
-      <input type="radio" name="rating" id="1">
-      <label for="1">1</label>
-      <input type="radio" name="rating" id="2">
-      <label for="2">2</label>
-      <input type="radio" name="rating" id="3">
-      <label for="3">3</label>
-      <input type="radio" name="rating" id="4">
-      <label for="4">4</label>
-      <br>
-      <br>
-      <button>Kirim</button>
-      </fieldset>
+    </footer>
   </body>
 </html>

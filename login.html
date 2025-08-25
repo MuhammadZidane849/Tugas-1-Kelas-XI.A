@@ -1,27 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Selamat Datang</title>
-</head>
-<body>
-    <form action="">
-      <fieldset>
-        <legend>Log In</legend>
-        <label for="name">Nama</label>
-        <br />
-        <input type="name" name="name" id="Nama" placeholder="Masukka Nama" required/>
-        <br />
-        <br />
-        <label for="email">Email</label>
-        <br />
-        <input type="email" name="email" id="Email" placeholder="Masukkan Email" required/>
-        <br>
-        <br>
-     <button a href="index.html">Log in</button>
-      
-      </fieldset>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <section class="login">
+      <main>
+        <article>
+          <form action="index.html">
+            <fieldset>
+              <legend><h2>login</h2></legend>
+              <label for="name">nama</label>
+              <br />
+              <input
+                type="text"
+                name="nama"
+                id="name"
+                placeholder="Masukkan Nama"
+              />
+              <br />
+              <br />
+              <label for="password">password</label>
+              <br />
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Masukkan password"
+              />
+              <br />
+              <br />
+              <button class="btn btn-primary float-end">Kirim</button>
+            </fieldset>
+          </form>
+        </article>
+      </main>
+    </section>
+  </body>
 </html>
